@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+:root {
+  --page-color: #73A857;
+}
+
+a{
+  color:unset;
+  text-decoration: none;
+}
+.App {
+  text-align: center;
+  background-color: var(--page-color);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.Quotbox {
+  width: 450px;
+  padding: 40px 50px;
+  display : flex;
+  flex-wrap: wrap;
+  background-color: white;  
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-weight:500;
+  color: var(--page-color);
+}
+
+.inner-box {
+  font-size:1.5em;
+  padding-bottom:50px;
+  flex: 100%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  text-indent: 40px;
+  
+}
+
+.inner-box>*>*.fa-quote-left{
+  display: inline;
+  margin-right:10px ;
+  
+}
+.inner-box>*>p{
+  display: inline;
+
+  
+}
+.inner-box>*>*.fa-quote-right{
+  display: inline;
+  margin-left:10px ;
+}
+#author{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size:0.6em;
+  font-weight: lighter;
+}
+
+
+.inner-box2 {
+
+  flex: 2;
+  padding:20px;
+  position: relative;
+}
+.inner-box2>div {
+  position: absolute;
+  
+  left: 10px;
+  bottom: 5px;
+}
+.inner-box2>div>span {
+  margin: 0 10px;
+}
+.inner-box2>div>span>a>*.fab {
+  font-size:2em;
+}
+
+.inner-box3  {
+  flex: 2;
+  padding:20px;
+  position: relative;
+}
+.inner-box3>button {
+  position: absolute; 
+  right: 10px;
+  bottom: 5px;
+  padding: 8px 18px;
+  color: white;
+  background-color:var(--page-color);
+  border: none;
+  cursor: pointer;
+  border-radius:5%;
+  font-weight:400;
+  transition: 0.1s;
+  
+}
+.inner-box3>button:hover{
+  -moz-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+@media(max-width: 600px) {
+  .Quotbox {
+    width: 70%;  
+  }
+
+}
+.slowmo{
+  transition: 1s ease-out;
+}
+.creator{
+  color: white;
+  margin-top:15px ;
+  font-weight: 300;
+  font-size: 0.8em;
+}
